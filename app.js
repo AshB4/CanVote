@@ -32,3 +32,12 @@ function isCold() {
         result.textContent = "It is warm. Wear light clothes.";
     }
 }
+
+function kmToMiles() {
+    const kmEl = document.getElementById("kilometers");
+    const km = parseFloat(kmEl.value);  
+
+    const miles = km / 1.60934;
+    console.log(km + " kilometers is equal to " + miles.toFixed(2) + " miles.");
+    document.getElementById("result").textContent = km + " km is equal to " + miles.toFixed(2) + " miles.";
+}
