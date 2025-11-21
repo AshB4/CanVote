@@ -9,3 +9,26 @@ function canVote() {
     console.log("You cannot vote yet.");
   }
 }
+
+function areaRectangle() {
+  const lengthEl = document.getElementById("length");
+  const widthEl = document.getElementById("width");
+  const area = parseFloat(lengthEl.value) * parseFloat(widthEl.value);
+    console.log("Area of the rectangle is: " + area);
+  document.getElementById("result").textContent = "The area is " + area;
+}   
+
+function isCold() {
+    const tempEl = document.getElementById("temperature");
+    const temperature = parseFloat(tempEl.value);
+    if (temperature < 10) {
+        console.log("It is cold. Wear warm clothes.");
+        result.textContent = "It is cold. Wear warm clothes.";
+    }else if (temperature >= 10 && temperature <= 25) {
+        console.log("It is moderate. Wear regular clothes.");
+        result.textContent = "It is moderate. Wear regular clothes.";
+    } else if (temperature > 25) {
+        console.log("It is warm. Wear light clothes.");
+        result.textContent = "It is warm. Wear light clothes.";
+    }
+}
